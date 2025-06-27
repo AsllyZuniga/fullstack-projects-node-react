@@ -1,6 +1,6 @@
 # Proyectos FullStack con Node.js y TypeScript
 
-Este repositorio contiene tres proyectos desarrollados como parte del curso "Aprende a Crear Aplicaciones FullStack con Node.js y TypeScript".
+Este repositorio contiene tres proyectos
 
 ## 📌 Proyectos
 
