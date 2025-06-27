@@ -2,8 +2,8 @@ import { Router } from "express";
 
 const router = Router();
 
-router.get("/", (req, res) => {
-  res.send("Hola Mundo en Express / TypeScript");
+//Autenticación y Registro
+router.post("/auth/register", (require, res) => {
+  console.log(res.app);
 });
-
-export default router
+export default router;
