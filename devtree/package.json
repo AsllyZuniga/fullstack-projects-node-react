@@ -11,6 +11,7 @@
     "start": "node dist/index.js"
   },
   "dependencies": {
+    "colors": "^1.4.0",
     "D": "^1.0.0",
     "dotenv": "^16.6.0",
     "express": "^5.1.0",
