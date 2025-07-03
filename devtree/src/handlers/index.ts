@@ -10,7 +10,6 @@ export const createAccount = async (req: Request, res: Response) => {
   if (!errors.isEmpty()) {
     return res.status(400).json({ errors: errors.array() });
   }
-  return;
 
   const { email, password } = req.body;
 
@@ -35,4 +34,11 @@ export const createAccount = async (req: Request, res: Response) => {
 
   await user.save();
   res.status(201).send("Registro Creado Correctamente");
+};
+
+export const login = async (req: Request, res: Response) => {
+  let errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(400).json({ errors: errors.array() });
+  }
 };
