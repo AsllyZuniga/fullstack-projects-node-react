@@ -21,7 +21,7 @@ router.post(
   login,
   body("email").isEmail().withMessage("E-mail no válido"),
   body("password")
-    .isLength({ min: 8 })
-    .withMessage("El password es muy corto, mínimo 8 caracteres")
+    .notEmpty()
+    .withMessage("El password es obligatorio")
 );
 export default router;
